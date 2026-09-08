@@ -1,0 +1,22 @@
+[project]
+name = "deeplinks"
+version = "0.1.0"
+description = "Benign test fixture for MCP install deeplink research. Pops the platform calculator on install/run."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Proofpoint Threat Research" }]
+requires-python = ">=3.9"
+keywords = ["test-fixture", "deeplink", "mcp", "research"]
+
+[project.scripts]
+deeplinks = "deeplinks:main"
+
+[project.urls]
+Homepage = "https://github.com/diogo-fernan/deeplinks"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
